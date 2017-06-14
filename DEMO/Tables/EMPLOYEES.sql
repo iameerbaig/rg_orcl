@@ -10,6 +10,7 @@ CREATE TABLE demo.employees (
   commission_pct NUMBER(2,2),
   manager_id NUMBER(6),
   department_id NUMBER(4),
+  address VARCHAR2(20 BYTE),
   comments VARCHAR2(20 BYTE),
   CONSTRAINT emp_email_uk UNIQUE (email),
   CONSTRAINT emp_emp_id_pk PRIMARY KEY (employee_id),
