@@ -4,6 +4,7 @@ CREATE TABLE demo.departments (
   manager_id NUMBER(6),
   location_id NUMBER(4),
   decription VARCHAR2(30 BYTE),
+  dept_code VARCHAR2(30 BYTE),
   CONSTRAINT dept_id_pk PRIMARY KEY (department_id),
   CONSTRAINT dept_loc_fk FOREIGN KEY (location_id) REFERENCES demo.locations (location_id),
   CONSTRAINT dept_mgr_fk FOREIGN KEY (manager_id) REFERENCES demo.employees (employee_id)
